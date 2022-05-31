@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3Dアニメションサンプル</title>
+</head>
+<body>
+    <div id="cloud" style="display: grid;place-items: center;height: 500px;">
+        <h1 style="color:#4169e1;text-shadow: 0 0 10px #1e90ff;font-size:50px">digital positive</h1>
+        <h2 style="color:#4169e1;text-shadow: 0 0 10px #1e90ff;font-size:40px">デジポジ</h2>
+        <p style="color:#4169e1;text-shadow: 0 0 10px #1e90ff;font-size:30px">今日も良き1日でありますように</p>
+    </div>
+
+    <!-- three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <!-- vanta.jsのテーマbirdsの場合 -->
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.clouds.min.js"></script>
+    
+    <script>
+            VANTA.CLOUDS({
+            el: "#cloud",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 500.00,
+            minWidth: 200.00,
+            skyColor: 0x69b7e3,
+            cloudColor: 0xd2d2f2,
+            sunColor: 0xff7718,
+            sunGlareColor: 0xffda30,
+            sunlightColor: 0xff8530,
+            speed: 1.00
+        })
+        </script>
+</body>
+</html>
